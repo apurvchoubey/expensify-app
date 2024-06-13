@@ -24,7 +24,7 @@ public class VendorService {
     public void pullVendorData() throws IOException {
         VendorWithTransactions[] vendors = expensifyClient.getVendorsWithTransactions();
         for (VendorWithTransactions vendor : vendors) {
-            vendorRepository.save(vendor); // Saves vendor with
+            vendorRepository.save(vendor); // Saves vendor with Latest Transactions
         }
     }
 }
